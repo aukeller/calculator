@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link href='calculator.css' rel = 'stylesheet' type='text/css'>
+</head>
+<body>
+    <div class='calculator'>  
+        
+        <input type='text' class='display' value='' placeholder="0" disabled>
+        
+        <div class='keys'>
+           
+           <button class='clear' onclick="clearData()">C</button>
+           <button class='signSwitch' onclick="switchSigns()">&#177;</button>
+           <button class='blank'></button>
+           <button class='operator' onclick="storeFirstInput('/')">&divide;</button>
+           
+           <button class='digit' onclick="populateDisplayNumbers('7')">7</button>
+           <button class='digit' onclick="populateDisplayNumbers('8')">8</button>
+           <button class='digit' onclick="populateDisplayNumbers('9')">9</button>
+           <button class='operator' onclick="storeFirstInput('X')">&times;</button>
+
+           <button class='digit' onclick="populateDisplayNumbers('4')">4</button>
+           <button class='digit' onclick="populateDisplayNumbers('5')">5</button>
+           <button class='digit' onclick="populateDisplayNumbers('6')">6</button>
+           <button class='operator' onclick="storeFirstInput('-')">-</button>
+
+
+           <button class='digit' onclick="populateDisplayNumbers('1')">1</button>
+           <button class='digit' onclick="populateDisplayNumbers('2')">2</button>
+           <button class='digit' onclick="populateDisplayNumbers('3')">3</button>
+           <button class='operator' onclick="storeFirstInput('+')">+</button>
+
+           <button id='zero' class='digit' onclick="populateDisplayNumbers('0')">0</button>
+           <button class='decimal' onclick="populateDisplayNumbers('.')">.</button>
+           <button class='equals' onclick = "solve()">=</button>     
+        </div>
+    </div>  
+    <script src = 'calculator.js'></script>
+</body>
+</html>
