@@ -1,4 +1,4 @@
-Calculator App by aukeller
+CALCULATOR by aukeller
 
 Tools used: HTML5
 CSS3
